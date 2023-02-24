@@ -1,0 +1,355 @@
+@import "nullstyle.scss";
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap");
+
+$grey: #efefef;
+$green: #66c05d;
+$dark: #333333;
+
+.Roboto_fz12_400 {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+}
+
+.Roboto_fz14_400 {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+}
+
+.Roboto_fz14_400_20 {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.Roboto_fz16_400 {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+}
+
+.Roboto_fz18_700 {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 21px;
+}
+
+.Roboto_fz21_500 {
+    font-weight: 500;
+    font-size: 21px;
+    line-height: 25px;
+}
+
+.Roboto_fz24_700 {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+}
+
+.Roboto_fz48_700 {
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 56px;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    color: dark;
+    background: $grey;
+}
+
+a {
+    text-decoration: none;
+    color: $dark;
+}
+
+.header {
+    &__top {
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__middle {
+        height: 120px;
+        background: white;
+        display: flex;
+        justify-content: center;
+    }
+
+    &__box {
+        width: 1110px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__logo {
+    }
+
+    &__contact {
+    }
+
+    &__bottom {
+        height: 80px;
+        background: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+.menu {
+    &__item {
+        @extend .Roboto_fz14_400;
+        margin: 0 15px;
+    }
+}
+.contact {
+    &__num {
+        @extend .Roboto_fz16_400;
+        margin-right: 40px;
+    }
+
+    &__btn-call {
+        @extend .Roboto_fz14_400;
+        width: 170px;
+        height: 40px;
+        background: #ffffff;
+        border: 2px solid #66c05d;
+        border-radius: 40px;
+    }
+}
+.goods-menu {
+    &__item {
+        @extend .Roboto_fz16_400;
+        margin: 0 20px;
+    }
+}
+
+.sale {
+    height: 604px;
+    color: #ffffff;
+    background: url(../img/chair.png) left 75% top 50% no-repeat, $green;
+    display: flex;
+    justify-content: center;
+
+    &__text {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 1110px;
+        align-items: start;
+    }
+
+    &__title {
+        @extend .Roboto_fz48_700;
+    }
+
+    &__subtitle {
+        @extend .Roboto_fz14_400_20;
+        margin: 50px 0;
+        max-width: 308px;
+    }
+
+    &__more {
+        @extend .Roboto_fz14_400;
+        color: #ffffff;
+        width: 170px;
+        height: 40px;
+        background: #66c05d;
+        border: 2px solid #ffffff;
+        border-radius: 40px;
+    }
+}
+.goods {
+    margin: 70px 0 85px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &__top {
+        width: 1110px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__title {
+        @extend .Roboto_fz24_700;
+    }
+
+    &__truck {
+        padding-right: 45px;
+    }
+
+    &__row {
+        max-width: 1140px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    &__item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 255px;
+        height: 363px;
+        background-color: #ffffff;
+        margin: 15px;
+    }
+
+    &__subtitle {
+        width: 195px;
+        @extend .Roboto_fz14_400_20;
+        margin: 20px 0;
+    }
+
+    &__price {
+        color: #000000;
+        @extend .Roboto_fz21_500;
+    }
+
+    &__btn-buy {
+        margin-top: 20px;
+        width: 130px;
+        height: 35px;
+        background: #66c05d;
+        border-radius: 30px;
+        color: #ffffff;
+        @extend .Roboto_fz14_400;
+    }
+}
+.info {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 130px;
+}
+
+.subscribe {
+    width: 540px;
+    height: 212px;
+    background: #66c05d;
+    color: #ffffff;
+    padding: 35px 40px;
+    margin: 15px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    &__text {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    &__title {
+        @extend .Roboto_fz18_700;
+    }
+
+    &__subtitle {
+        @extend .Roboto_fz14_400_20;
+        max-width: 235px;
+    }
+
+    &__e-mail-form {
+    }
+
+    &__e-mail {
+        width: 225px;
+        height: 35px;
+        background: #ffffff;
+        border-radius: 30px;
+        @extend .Roboto_fz14_400;
+        text-align: center;
+    }
+
+    &__e-mail::placeholder {
+        color: #c4c4c4;
+    }
+
+    &__envelope {
+    }
+}
+.our-shops {
+    width: 540px;
+    height: 212px;
+    background: #66c05d;
+    color: #ffffff;
+    margin: 15px;
+    padding: 35px 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    &__title {
+        @extend .Roboto_fz18_700;
+    }
+
+    &__subtitle {
+        @extend .Roboto_fz14_400_20;
+        max-width: 141px;
+    }
+
+    &__btn-shops {
+        @extend .Roboto_fz14_400;
+        width: 170px;
+        height: 35px;
+        background: #66c05d;
+        border: 2px solid #ffffff;
+        border-radius: 30px;
+        color: #ffffff;
+    }
+}
+.footer {
+    &__top {
+        height: 120px;
+        background: #ffffff;
+        display: flex;
+        justify-content: center;
+    }
+
+    &__box {
+        width: 1100px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &__icons {
+        width: 240px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__address {
+        color: #000000;
+        @extend .Roboto_fz14_400;
+    }
+
+    &__contact {
+    }
+
+    &__bottom {
+        height: 65px;
+        display: flex;
+        justify-content: center;
+    }
+
+    &__text {
+        color: #828282;
+        @extend .Roboto_fz12_400;
+    }
+
+    &__info {
+        color: #828282;
+        @extend .Roboto_fz12_400;
+    }
+}
