@@ -66,14 +66,14 @@ a {
 
 .header {
     &__top {
-        height: 50px;
+        min-height: 50px;
         display: flex;
         justify-content: center;
         align-items: center;
     }
 
     &__middle {
-        height: 120px;
+        min-height: 120px;
         background: white;
         display: flex;
         justify-content: center;
@@ -84,16 +84,11 @@ a {
         display: flex;
         justify-content: space-between;
         align-items: center;
-    }
-
-    &__logo {
-    }
-
-    &__contact {
+        flex-wrap: wrap;
     }
 
     &__bottom {
-        height: 80px;
+        min-height: 80px;
         background: white;
         display: flex;
         justify-content: center;
@@ -101,15 +96,26 @@ a {
     }
 }
 .menu {
+    width: 450px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+
     &__item {
         @extend .Roboto_fz14_400;
-        margin: 0 15px;
+        margin: 10px 5px;
     }
 }
 .contact {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
     &__num {
         @extend .Roboto_fz16_400;
-        margin-right: 40px;
+        margin: 5px 20px;
     }
 
     &__btn-call {
@@ -119,12 +125,20 @@ a {
         background: #ffffff;
         border: 2px solid #66c05d;
         border-radius: 40px;
+        margin: 5px 20px;
     }
 }
 .goods-menu {
+    width: 675px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+
     &__item {
         @extend .Roboto_fz16_400;
-        margin: 0 20px;
+        margin: 10px 5px;
     }
 }
 
@@ -224,7 +238,7 @@ a {
         margin-top: 20px;
         width: 130px;
         height: 35px;
-        background: #66c05d;
+        background: $green;
         border-radius: 30px;
         color: #ffffff;
         @extend .Roboto_fz14_400;
@@ -241,7 +255,7 @@ a {
 .subscribe {
     width: 540px;
     height: 212px;
-    background: #66c05d;
+    background: $green;
     color: #ffffff;
     padding: 35px 40px;
     margin: 15px;
@@ -265,9 +279,6 @@ a {
         max-width: 235px;
     }
 
-    &__e-mail-form {
-    }
-
     &__e-mail {
         width: 225px;
         height: 35px;
@@ -280,14 +291,11 @@ a {
     &__e-mail::placeholder {
         color: #c4c4c4;
     }
-
-    &__envelope {
-    }
 }
 .our-shops {
     width: 540px;
     height: 212px;
-    background: #66c05d;
+    background: $green;
     color: #ffffff;
     margin: 15px;
     padding: 35px 40px;
@@ -308,7 +316,7 @@ a {
         @extend .Roboto_fz14_400;
         width: 170px;
         height: 35px;
-        background: #66c05d;
+        background: $green;
         border: 2px solid #ffffff;
         border-radius: 30px;
         color: #ffffff;
@@ -316,7 +324,7 @@ a {
 }
 .footer {
     &__top {
-        height: 120px;
+        min-height: 120px;
         background: #ffffff;
         display: flex;
         justify-content: center;
@@ -328,12 +336,14 @@ a {
         flex-direction: row;
         align-items: center;
         justify-content: space-between;
+        flex-wrap: wrap;
     }
 
     &__icons {
         width: 240px;
         display: flex;
         justify-content: space-between;
+        margin: 10px 0;
     }
 
     &__address {
@@ -341,11 +351,8 @@ a {
         @extend .Roboto_fz14_400;
     }
 
-    &__contact {
-    }
-
     &__bottom {
-        height: 65px;
+        min-height: 65px;
         display: flex;
         justify-content: center;
     }
@@ -358,5 +365,65 @@ a {
     &__info {
         color: #828282;
         @extend .Roboto_fz12_400;
+    }
+}
+
+/* Tablet  ----------- */
+@media only screen and (-webkit-min-device-pixel-ratio: 1) and (max-width: 1140px) {
+    .header {
+        &__box {
+            width: 100%;
+            padding: 0 20px;
+            justify-content: space-around;
+        }
+    }
+    .sale {
+        background: url(../img/chair_tablet.png) right no-repeat, $green;
+
+        &__text {
+            width: 100%;
+            padding: 0 20px;
+        }
+    }
+    .goods {
+        &__top {
+            width: 100%;
+            padding: 0 20px;
+        }
+    }
+
+    .footer {
+        &__box {
+            width: 100%;
+            padding: 0 20px;
+            justify-content: space-around;
+        }
+    }
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 1) and (max-width: 750px) {
+    .sale {
+        background: url(../img/chair_tablet_small.png) right no-repeat, $green;
+
+        &__subtitle {
+            max-width: 200px;
+        }
+    }
+    .goods {
+        &__top {
+            justify-content: center;
+        }
+        &__truck {
+            display: none;
+        }
+    }
+}
+
+/* Mobile  ----------- */
+@media only screen and (-webkit-min-device-pixel-ratio: 1) and (max-width: 500px) {
+    .subscribe {
+        &__envelope {
+            display: none;
+        }
     }
 }
