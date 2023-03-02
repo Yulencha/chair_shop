@@ -89,54 +89,56 @@ h6 {
 }
 
 /*--------------------*/
-.Roboto_fz12_400, .footer__info, .footer__text {
+/*Шрифты*/
+.footer__info, .footer__text {
   font-weight: 400;
   font-size: 12px;
   line-height: 14px;
 }
 
-.Roboto_fz14_400, .footer__address, .our-shops__btn-shops, .subscribe__e-mail, .goods__btn-buy, .sale__more, .contact__btn-call, .menu__item {
+.footer__address, .our-shops__btn-shops, .subscribe__e-mail, .goods__btn-buy, .sale__more, .contact__btn-call, .menu__item {
   font-weight: 400;
   font-size: 14px;
   line-height: 16px;
 }
 
-.Roboto_fz14_400_20, .our-shops__subtitle, .subscribe__subtitle, .goods__subtitle, .sale__subtitle {
+.our-shops__subtitle, .subscribe__subtitle, .goods__subtitle, .sale__subtitle {
   font-weight: 400;
   font-size: 14px;
   line-height: 20px;
 }
 
-.Roboto_fz16_400, .goods-menu__item, .contact__num {
+.goods-menu__item, .contact__num {
   font-weight: 400;
   font-size: 16px;
   line-height: 19px;
 }
 
-.Roboto_fz18_700, .our-shops__title, .subscribe__title {
+.our-shops__title, .subscribe__title {
   font-weight: 700;
   font-size: 18px;
   line-height: 21px;
 }
 
-.Roboto_fz21_500, .goods__price {
+.goods__price {
   font-weight: 500;
   font-size: 21px;
   line-height: 25px;
 }
 
-.Roboto_fz24_700, .goods__title {
+.goods__title {
   font-weight: 700;
   font-size: 24px;
   line-height: 28px;
 }
 
-.Roboto_fz48_700, .sale__title {
+.sale__title {
   font-weight: 700;
   font-size: 48px;
   line-height: 56px;
 }
 
+/*--------------------*/
 body {
   font-family: "Roboto", sans-serif;
   color: dark;

@@ -1,57 +1,10 @@
 @import "nullstyle.scss";
+@import "fonts.scss";
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap");
 
 $grey: #efefef;
 $green: #66c05d;
 $dark: #333333;
-
-.Roboto_fz12_400 {
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 14px;
-}
-
-.Roboto_fz14_400 {
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 16px;
-}
-
-.Roboto_fz14_400_20 {
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 20px;
-}
-
-.Roboto_fz16_400 {
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 19px;
-}
-
-.Roboto_fz18_700 {
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 21px;
-}
-
-.Roboto_fz21_500 {
-    font-weight: 500;
-    font-size: 21px;
-    line-height: 25px;
-}
-
-.Roboto_fz24_700 {
-    font-weight: 700;
-    font-size: 24px;
-    line-height: 28px;
-}
-
-.Roboto_fz48_700 {
-    font-weight: 700;
-    font-size: 48px;
-    line-height: 56px;
-}
 
 body {
     font-family: "Roboto", sans-serif;
@@ -104,7 +57,7 @@ a {
     flex-wrap: wrap;
 
     &__item {
-        @extend .Roboto_fz14_400;
+        @extend %Roboto_fz14_400;
         margin: 10px 5px;
     }
 }
@@ -114,12 +67,12 @@ a {
     flex-wrap: wrap;
     justify-content: space-around;
     &__num {
-        @extend .Roboto_fz16_400;
+        @extend %Roboto_fz16_400;
         margin: 5px 20px;
     }
 
     &__btn-call {
-        @extend .Roboto_fz14_400;
+        @extend %Roboto_fz14_400;
         width: 170px;
         height: 40px;
         background: #ffffff;
@@ -138,7 +91,7 @@ a {
     flex-wrap: wrap;
 
     &__item {
-        @extend .Roboto_fz16_400;
+        @extend %Roboto_fz16_400;
         margin: 10px 5px;
     }
 }
@@ -159,17 +112,17 @@ a {
     }
 
     &__title {
-        @extend .Roboto_fz48_700;
+        @extend %Roboto_fz48_700;
     }
 
     &__subtitle {
-        @extend .Roboto_fz14_400_20;
+        @extend %Roboto_fz14_400_20;
         margin: 50px 0;
         max-width: 308px;
     }
 
     &__more {
-        @extend .Roboto_fz14_400;
+        @extend %Roboto_fz14_400;
         color: #ffffff;
         width: 170px;
         height: 40px;
@@ -199,7 +152,7 @@ a {
     }
 
     &__title {
-        @extend .Roboto_fz24_700;
+        @extend %Roboto_fz24_700;
     }
 
     &__truck {
@@ -226,13 +179,13 @@ a {
 
     &__subtitle {
         width: 195px;
-        @extend .Roboto_fz14_400_20;
+        @extend %Roboto_fz14_400_20;
         margin: 20px 0;
     }
 
     &__price {
         color: #000000;
-        @extend .Roboto_fz21_500;
+        @extend %Roboto_fz21_500;
     }
 
     &__btn-buy {
@@ -242,7 +195,7 @@ a {
         background: $green;
         border-radius: 30px;
         color: #ffffff;
-        @extend .Roboto_fz14_400;
+        @extend %Roboto_fz14_400;
     }
 }
 .info {
@@ -272,11 +225,11 @@ a {
     }
 
     &__title {
-        @extend .Roboto_fz18_700;
+        @extend %Roboto_fz18_700;
     }
 
     &__subtitle {
-        @extend .Roboto_fz14_400_20;
+        @extend %Roboto_fz14_400_20;
         max-width: 235px;
     }
 
@@ -285,7 +238,7 @@ a {
         height: 35px;
         background: #ffffff;
         border-radius: 30px;
-        @extend .Roboto_fz14_400;
+        @extend %Roboto_fz14_400;
         text-align: center;
     }
 
@@ -305,16 +258,16 @@ a {
     justify-content: space-between;
 
     &__title {
-        @extend .Roboto_fz18_700;
+        @extend %Roboto_fz18_700;
     }
 
     &__subtitle {
-        @extend .Roboto_fz14_400_20;
+        @extend %Roboto_fz14_400_20;
         max-width: 141px;
     }
 
     &__btn-shops {
-        @extend .Roboto_fz14_400;
+        @extend %Roboto_fz14_400;
         width: 170px;
         height: 35px;
         background: $green;
@@ -349,7 +302,7 @@ a {
 
     &__address {
         color: #000000;
-        @extend .Roboto_fz14_400;
+        @extend %Roboto_fz14_400;
     }
 
     &__bottom {
@@ -360,12 +313,12 @@ a {
 
     &__text {
         color: #828282;
-        @extend .Roboto_fz12_400;
+        @extend %Roboto_fz12_400;
     }
 
     &__info {
         color: #828282;
-        @extend .Roboto_fz12_400;
+        @extend %Roboto_fz12_400;
     }
 }
 
